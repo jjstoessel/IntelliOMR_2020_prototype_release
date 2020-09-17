@@ -1,0 +1,22 @@
+.musicIcon {
+  display: inline-block;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.selectedMusicIcon {
+  display: inline-block;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.snapToGridButton {
+  display: inline-block;
+  padding: 7px;
+  border: 1px solid black;
+  margin: 3px;
+  cursor: pointer;
+}

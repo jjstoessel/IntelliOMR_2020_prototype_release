@@ -1,0 +1,58 @@
+type userDocumentSets @model {
+  id: ID!
+  userID: String
+  documentSetInfo: documentSetInfo! @connection(name: "documentSet")
+}
+
+type documentSetInfo @model {
+  id: ID!
+  name: String!
+  description: String!
+  users: [userDocumentSets] @connection(name: "documentSet")
+  images: [documentImage]
+    @connection(name: "documentImage", sortField: "imageName")
+}
+
+type documentImage @model {
+  id: ID!
+  imageName: String
+  smallImage: String
+  mediumImage: String
+  largeImage: String
+  documentSetId: String
+  documentSetInfo: documentSetInfo! @connection(name: "documentImage")
+  calculatedOrientation: Float
+  pageBoundaries: String
+  lastPhaseRun: Int
+  pageStaffLocations: String
+  staffs: [documentStaff] @connection(name: "documentStaff")
+}
+
+type documentStaff @model {
+  id: ID!
+  pageNum: Int
+  staffNum: Int
+  documentImage: documentImage! @connection(name: "documentStaff")
+  pointsOfInterest: String
+  guides: String
+  x: Float
+  y: Float
+  width: Float
+  height: Float
+  symbols: String
+  voice: Int
+  bookend: String
+  documentId: String
+}
+
+type trainingImage @model {
+  id: ID!
+  image: String
+  page: String
+  staff: String
+  location: String
+  pitch: String
+  filename: String
+  value: String
+  hidden: String
+}

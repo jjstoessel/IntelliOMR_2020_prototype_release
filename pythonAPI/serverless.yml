@@ -1,0 +1,85 @@
+service: music-python-uq # NOTE: update this with your service name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+# frameworkVersion: "=X.X.X"
+
+provider:
+  name: aws
+  runtime: python3.6
+  stage: prod
+  region: us-east-1
+  timeout: 20
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
+#custom:
+#  pythonRequirements:
+#    dockerizePip: non-linux
+
+functions:
+  phase1_calculate_orientation:
+    # Defines an HTTP API endpoint that calls the main function in list.js
+    # - path: url path is /notes
+    # - method: GET request
+    handler: phase1.main
+    events:
+      - http:
+          path: phase1_calculate_orientation
+          method: post
+          cors: true
+          #authorizer: aws_iam
+  phase2:
+    # Defines an HTTP API endpoint that calls the main function in list.js
+    # - path: url path is /notes
+    # - method: GET request
+    handler: phase2.main
+    events:
+      - http:
+          path: phase2
+          method: post
+          cors: true
+          #authorizer: aws_iam
+  phase3:
+    # Defines an HTTP API endpoint that calls the main function in list.js
+    # - path: url path is /notes
+    # - method: GET request
+    handler: phase3.main
+    events:
+      - http:
+          path: phase3
+          method: post
+          cors: true
+          #authorizer: aws_iam
+
+  phase4:
+    # Defines an HTTP API endpoint that calls the main function in list.js
+    # - path: url path is /notes
+    # - method: GET request
+    handler: phase4.main
+    events:
+      - http:
+          path: phase4
+          method: post
+          cors: true
+          #authorizer: aws_iam
+  uploadModel:
+    handler: uploadNetworkModel.main
+    events:
+      - http:
+          path: uploadNetworkModel
+          method: post
+          cors: true
+          #authorizer: aws_iam
+  uploadNetworkSymbols:
+    handler: uploadNetworkSymbols.main
+    events:
+      - http:
+          path: uploadNetworkSymbols
+          method: post
+          cors: true
+          #authorizer: aws_iam

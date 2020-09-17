@@ -1,0 +1,39 @@
+.DocumentScanList .ImageListItem:hover {
+  background-color: lightblue;
+}
+
+.DocumentScanList .SelectedImageListItem {
+  background-color: blue;
+  color: white;
+}
+
+.ScanItems {
+  max-height: 500px;
+  overflow-y: scroll;
+  background-color: lightgray;
+  padding-bottom: 10px;
+}
+
+.Thumbnail {
+  display: inline-block;
+  max-width: 96px;
+  padding: 3px;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.Thumbnail img {
+  width: 90px;
+}
+
+.Thumbnail .DeleteImage {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 2px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+}

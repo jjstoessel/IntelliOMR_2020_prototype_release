@@ -1,0 +1,38 @@
+.ImageRegionSelector .circle {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 255, 0.5);
+  margin-left: -10px;
+  margin-top: -10px;
+  position: absolute;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+.ImageRegionSelector .selectedCircle {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 0, 0, 0.5);
+  margin-left: -10px;
+  margin-top: -10px;
+  position: absolute;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.ImageRegionSelector {
+  position: relative;
+}
+
+.ImageRegionSelector .movementPanel {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.ImageRegionSelectorDiv button {
+  margin: 5px;
+}

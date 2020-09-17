@@ -1,0 +1,16 @@
+<mei xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns="http://www.music-encoding.org/ns/mei"
+ meiversion="2012"> 
+ <meiHead> 
+ <fileDesc>
+ <titleStmt>
+ <title>Example Render</title>
+ </titleStmt>
+ <pubStmt/>
+ </fileDesc>
+ </meiHead>
+ <music n="opera">
+    <body>      
+    </body>
+</music>
+</mei>

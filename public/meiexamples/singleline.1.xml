@@ -1,0 +1,37 @@
+<mei xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns="http://www.music-encoding.org/ns/mei"
+ meiversion="2012"> 
+ <meiHead> 
+ <fileDesc>
+ <titleStmt>
+ <title>Example Render</title>
+ </titleStmt>
+ <pubStmt/>
+ </fileDesc>
+ </meiHead>
+ <music n="opera">
+    <body>
+        <mdiv n="score_1">
+            <score>
+                <scoreDef xml:id="scoredef-000000112026657" midi.bpm="120">
+                        <staffGrp xml:id="m-000000073438725" symbol="bracket">
+                            <staffDef xml:id="staffdef-000000188409300" clef.shape="G" clef.line="2" key.sig="1s" meter.count="2" meter.unit="4" n="1" lines="5" />
+                        </staffGrp>
+                </scoreDef>
+                <section xml:id="section-000000152062723">
+                        <measure xml:id="measure-000000113764484" n="1">
+                            <staff xml:id="staff-000000198862101" n="1">
+                                <layer xml:id="layer-000000015998420" n="1">
+                                    <note pname="b" oct="4" dur="4" stem.dir="down"/>
+                                    <note pname="a" oct="4" dur="4" stem.dir="up"/>
+                                    <note pname="g" oct="4" dur="4" stem.dir="up"/>
+                                    <note pname="a" oct="4" dur="4" stem.dir="up"/>
+                                </layer>
+                            </staff>
+                        </measure>
+                </section>                
+            </score>
+        </mdiv>       
+    </body>
+</music>
+</mei>

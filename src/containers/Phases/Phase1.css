@@ -1,0 +1,37 @@
+.Phase1 .rotatedImage {
+  width: 100%;
+  transform: rotate(10deg);
+}
+
+.Phase1 .imageArea {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.Phase1 .gridOverlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      darkblue 0,
+      transparent 3px,
+      transparent 10%
+    ),
+    repeating-linear-gradient(
+      -90deg,
+      transparent,
+      darkblue 0,
+      transparent 3px,
+      transparent 10%
+    );
+}
+
+.Phase1 h2 {
+  color: darkblue;
+}

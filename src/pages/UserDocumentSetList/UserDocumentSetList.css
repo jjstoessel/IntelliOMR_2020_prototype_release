@@ -1,0 +1,23 @@
+.DocSet .lander {
+  padding: 80px 0;
+  text-align: center;
+}
+.DocSet .lander h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.DocSet .lander p {
+  color: #999;
+}
+
+.DocSet .notes h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  overflow: hidden;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.DocSet .notes p {
+  color: #666;
+}

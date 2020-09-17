@@ -1,0 +1,59 @@
+.ImagePointsOfInterestSelector .circle {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 255, 0.5);
+  margin-left: -10px;
+  margin-top: -10px;
+  position: absolute;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+.ImagePointsOfInterestSelector .selectedCircle {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 0, 0, 0.5);
+  margin-left: -10px;
+  margin-top: -10px;
+  position: absolute;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.ImagePointsOfInterestSelector {
+  position: relative;
+}
+
+.ImagePointsOfInterestSelector .movementPanel {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.ImagePointsOfInterestSelectorDiv button {
+  margin: 5px;
+}
+
+.Icon {
+  display: inline-block;
+  padding: 1px;
+  margin-right: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.SelectedIcon {
+  display: inline-block;
+  padding: 1px;
+  margin-right: 5px;
+  margin-top: 10px;
+  background-color: lightblue;
+  font-size: 30px;
+  line-height: 1;
+  border: 2px solid blue;
+}

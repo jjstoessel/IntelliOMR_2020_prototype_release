@@ -1,0 +1,47 @@
+.examplethumbnail {
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+}
+
+.examplethumbnailoverlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.selectedItem {
+  font-weight: bold;
+  color: blue;
+  padding: 3px;
+  display: inline-block;
+}
+
+.unselectedItem {
+  cursor: pointer;
+  padding: 3px;
+  display: inline-block;
+}
+
+.deleteExample {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 2px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+}
+
+.saveExample {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 2px;
+  margin-left: 3px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  color: green;
+}

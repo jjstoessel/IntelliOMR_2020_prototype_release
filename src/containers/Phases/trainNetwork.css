@@ -1,0 +1,8 @@
+.uploadPanel {
+  background-color: lightcoral;
+  color: white;
+  text-align: left;
+  margin: 10px;
+  border: 3px solid red;
+  padding: 10px;
+}
